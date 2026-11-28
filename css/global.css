@@ -4144,9 +4144,10 @@ html, body {
         }
 
         .btn-explore-capsule:hover {
-            background: #FFFFFF !important;
-            border-color: #FFFFFF !important;
-            color: #000000 !important;
+            background: #EB4604 !important;
+            border-color: #EB4604 !important;
+            color: #FFFFFF !important;
+            outline: none !important;
             box-shadow: none !important;
             transform: none !important;
         }

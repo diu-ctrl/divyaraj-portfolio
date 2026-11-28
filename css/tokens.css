@@ -963,9 +963,11 @@ button:not(.card-mute-btn):not(.phone-mute-btn):not(.reel-mute-btn):not(.control
   color: #FFFFFF !important;
 }
 .btn-ripple-container.theme-white-to-orange:hover {
-  background-color: #FFFFFF !important;
-  border-color: #FFFFFF !important;
-  color: #000000 !important;
+  background-color: #EB4604 !important;
+  border-color: #EB4604 !important;
+  color: #FFFFFF !important;
+  outline: none !important;
+  box-shadow: none !important;
 }
 
 /* Theme 2: Dark / Transparent Outline (e.g. .btn-outline, .btn-brutalist-outline, .back-btn, .social-mail-btn, .brand-nav-btn, .nav-capsule) */
