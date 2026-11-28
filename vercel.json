@@ -16,6 +16,11 @@
   ],
   "redirects": [
     {
+      "source": "/8bit-creatives",
+      "destination": "/websites#8bit-creatives",
+      "permanent": true
+    },
+    {
       "source": "/resume",
       "destination": "/divyaraj-resume",
       "permanent": true
