@@ -4203,6 +4203,7 @@ html, body {
             width: 100% !important;
         }
 
+        /* ─── GitHub Capsule Button with Direction-Aware White Ripple ─── */
         .btn-github-capsule {
             display: inline-flex !important;
             align-items: center !important;
@@ -4221,26 +4222,72 @@ html, body {
             text-decoration: none !important;
             cursor: pointer !important;
             white-space: nowrap !important;
-            transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
             box-sizing: border-box !important;
+            position: relative !important;
+            overflow: hidden !important;
+            isolation: isolate !important;
+            transform: none !important;
+            transition: border-color 0.3s ease !important;
         }
 
         .btn-github-capsule:hover {
-            background: #242424 !important;
-            border-color: rgba(255, 255, 255, 0.45) !important;
-            color: #FFFFFF !important;
-            transform: translateY(-1px) !important;
+            background: #141414 !important;
+            border-color: #FFFFFF !important;
+            color: #000000 !important;
+            transform: none !important;
+            box-shadow: none !important;
+            outline: none !important;
         }
 
-        .btn-github-capsule svg {
+        .btn-github-capsule .btn-label-base {
+            position: relative !important;
+            z-index: 1 !important;
+            display: inline-flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            gap: 8px !important;
+            color: #E4E4E7 !important;
+            pointer-events: none !important;
+            transition: none !important;
+            width: 100% !important;
+            height: 100% !important;
+        }
+
+        .btn-github-capsule .btn-label-base svg {
             flex-shrink: 0;
             display: block;
             opacity: 0.85;
-            transition: opacity 0.2s ease;
+            fill: currentColor !important;
+            color: #E4E4E7 !important;
         }
 
-        .btn-github-capsule:hover svg {
-            opacity: 1;
+        .btn-github-capsule .btn-ripple-overlay {
+            position: absolute !important;
+            inset: -1px !important;
+            border-radius: var(--r-pill, 999px) !important;
+            background: #FFFFFF !important;
+            color: #000000 !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            gap: 8px !important;
+            padding: 0 20px !important;
+            font-family: var(--font-sans) !important;
+            font-size: 13px !important;
+            font-weight: 600 !important;
+            letter-spacing: 0.02em !important;
+            pointer-events: none !important;
+            z-index: 2 !important;
+            white-space: nowrap !important;
+            clip-path: circle(0px at 50% 50%);
+            will-change: clip-path;
+        }
+
+        .btn-github-capsule .btn-ripple-overlay svg,
+        .btn-github-capsule .btn-ripple-overlay svg path {
+            fill: #000000 !important;
+            color: #000000 !important;
+            opacity: 1 !important;
         }
 
 
@@ -5477,7 +5524,8 @@ h1 .grad,
         min-height: 34px;
     }
 
-    .web-circ-card .btn-explore-capsule {
+    .web-circ-card .btn-explore-capsule,
+    .web-circ-card .btn-github-capsule {
         margin-top: auto;
         width: 100% !important;
         height: 38px !important;

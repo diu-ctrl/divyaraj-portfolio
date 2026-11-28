@@ -25,6 +25,7 @@
     function initRippleButtons() {
         const selectors = [
             '.btn-explore-capsule',
+            '.btn-github-capsule',
             '.btn-primary-gold',
             '.btn-outline',
             '.btn-brutalist-outline',
@@ -52,6 +53,8 @@
                 theme = 'theme-orange-to-dark';
             } else if (btn.classList.contains('btn-explore-capsule')) {
                 theme = 'theme-white-to-orange';
+            } else if (btn.classList.contains('btn-github-capsule')) {
+                theme = 'theme-dark-to-white';
             } else if (btn.classList.contains('btn-primary-gold') || btn.classList.contains('download-pdf-btn') || btn.classList.contains('back-to-top-btn') || btn.classList.contains('btn-book-coffee')) {
                 theme = 'theme-orange-to-white';
             } else {

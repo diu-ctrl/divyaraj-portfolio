@@ -970,6 +970,41 @@ button:not(.card-mute-btn):not(.phone-mute-btn):not(.reel-mute-btn):not(.control
   box-shadow: none !important;
 }
 
+/* Theme 4: Dark to White (e.g. .btn-github-capsule) */
+.btn-ripple-container.theme-dark-to-white {
+  background-color: #141414 !important;
+  color: #E4E4E7 !important;
+  border-color: rgba(255, 255, 255, 0.16) !important;
+  transform: none !important;
+}
+.btn-ripple-container.theme-dark-to-white .btn-label-base {
+  color: #E4E4E7 !important;
+}
+.btn-ripple-container.theme-dark-to-white .btn-label-base svg {
+  fill: currentColor !important;
+  color: #E4E4E7 !important;
+  opacity: 0.85 !important;
+}
+.btn-ripple-container.theme-dark-to-white .btn-ripple-overlay {
+  background: #FFFFFF !important;
+  background-color: #FFFFFF !important;
+  color: #000000 !important;
+}
+.btn-ripple-container.theme-dark-to-white .btn-ripple-overlay svg,
+.btn-ripple-container.theme-dark-to-white .btn-ripple-overlay svg path {
+  fill: #000000 !important;
+  color: #000000 !important;
+  opacity: 1 !important;
+}
+.btn-ripple-container.theme-dark-to-white:hover {
+  background-color: #141414 !important;
+  border-color: #FFFFFF !important;
+  color: #000000 !important;
+  transform: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
 /* Theme 2: Dark / Transparent Outline (e.g. .btn-outline, .btn-brutalist-outline, .back-btn, .social-mail-btn, .brand-nav-btn, .nav-capsule) */
 .btn-ripple-container.theme-dark-to-orange {
   /* retains dark/transparent base */
