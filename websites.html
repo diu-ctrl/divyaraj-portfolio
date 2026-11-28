@@ -2987,9 +2987,9 @@
             let cleanId = (targetId && targetId.startsWith('#')) ? targetId.replace('#', '') : (targetId || '');
             if (cleanId === 'turf') cleanId = 'skybox';
             
-            // If cleanId is invalid or empty, default to chemops
+            // If cleanId is invalid or empty, default to 8bit-creatives
             if (!validTabs.includes(cleanId)) {
-                cleanId = 'chemops';
+                cleanId = '8bit-creatives';
             }
 
             let activeSection = null;
@@ -3050,7 +3050,7 @@
             if (validTabs.includes(cleanHash)) {
                 return hash;
             }
-            return '#chemops';
+            return '#8bit-creatives';
         }
 
         function initTab(shouldScroll = false) {
